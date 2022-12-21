@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Nurture</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="name_1">Nurture</string>
+    <string name="name_2">Nurture</string>
+    <string name="name_3">Nurture</string>
+    <string name="name_4">Nurture</string>
+    <string name="name_5">Nurture</string>
+    <string name="name_6">Nurture</string>
+    <string name="name_7">Nurture</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

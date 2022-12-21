@@ -6,17 +6,228 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+<!--    <TextView-->
+<!--        android:id="@+id/fourthFragment"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Profile"-->
+<!--        android:textSize="24sp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.5"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+    <ImageView
+        android:id="@+id/pfp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pfp" />
+
     <TextView
-        android:id="@+id/fourthFragment"
+        android:id="@+id/acc_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Profile"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="100dp"
+        android:text="Shrek"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@id/pfp"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/test_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="test result:"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@id/acc_name"
+        app:layout_constraintTop_toBottomOf="@id/acc_name"
+        />
+
+    <ImageView
+        android:id="@+id/badge"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="@id/acc_name"
+        app:layout_constraintTop_toBottomOf="@id/test_result"
+        app:srcCompat="@drawable/badge"/>
+
+    <ImageView
+        android:id="@+id/logout"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="170dp"
+        app:layout_constraintStart_toEndOf="@id/acc_name"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logout"/>
+
+    <ImageView
+        android:id="@+id/account"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="@id/pfp"
+        app:layout_constraintTop_toBottomOf="@id/pfp"
+        app:srcCompat="@drawable/acc"/>
+
+    <TextView
+        android:id="@+id/profile_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="32dp"
+        android:text="Profile Information"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pfp" />
+
+    <TextView
+        android:id="@+id/profile_info_sec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="See more information about you"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@id/profile_info"
+        app:layout_constraintTop_toBottomOf="@id/profile_info"/>
+
+    <ImageView
+        android:id="@+id/bookmark"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="35dp"
+        app:layout_constraintStart_toStartOf="@id/pfp"
+        app:layout_constraintTop_toBottomOf="@id/account"
+        app:srcCompat="@drawable/bookmark"/>
+
+    <TextView
+        android:id="@+id/bookmark_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="65dp"
+        android:text="Bookmark"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profile_info_sec"/>
+
+    <TextView
+        android:id="@+id/bookmark_info_sec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View saved content"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@id/bookmark_info"
+        app:layout_constraintTop_toBottomOf="@id/bookmark_info"/>
+
+    <ImageView
+        android:id="@+id/help"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="35dp"
+        app:layout_constraintStart_toStartOf="@id/pfp"
+        app:layout_constraintTop_toBottomOf="@id/bookmark"
+        app:srcCompat="@drawable/help"/>
+
+    <TextView
+        android:id="@+id/help_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="65dp"
+        android:text="Help"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bookmark_info_sec"/>
+
+    <TextView
+        android:id="@+id/help_info_sec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact us here"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@id/help_info"
+        app:layout_constraintTop_toBottomOf="@id/help_info"/>
+
+    <ImageView
+        android:id="@+id/feedback"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="35dp"
+        app:layout_constraintStart_toStartOf="@id/pfp"
+        app:layout_constraintTop_toBottomOf="@id/help"
+        app:srcCompat="@drawable/feedback"/>
+
+    <TextView
+        android:id="@+id/feedback_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="65dp"
+        android:text="Feedback"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/help_info_sec"/>
+
+    <TextView
+        android:id="@+id/feedback_info_sec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="give a review of our application"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@id/feedback_info"
+        app:layout_constraintTop_toBottomOf="@id/feedback_info"/>
+
+    <ImageView
+        android:id="@+id/arrLeft4"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="35dp"
+        app:layout_constraintStart_toStartOf="@id/logout"
+        app:layout_constraintTop_toBottomOf="@id/help"
+        app:srcCompat="@drawable/arrowright"/>
+
+    <ImageView
+        android:id="@+id/arrLeft3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="35dp"
+        app:layout_constraintStart_toStartOf="@id/logout"
+        app:layout_constraintTop_toBottomOf="@id/bookmark"
+        app:srcCompat="@drawable/arrowright"/>
+
+    <ImageView
+        android:id="@+id/arrLeft2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="35dp"
+        app:layout_constraintStart_toStartOf="@id/logout"
+        app:layout_constraintTop_toBottomOf="@id/account"
+        app:srcCompat="@drawable/arrowright"/>
+
+    <ImageView
+        android:id="@+id/arrLeft1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="35dp"
+        app:layout_constraintStart_toStartOf="@id/logout"
+        app:layout_constraintTop_toBottomOf="@id/pfp"
+        app:srcCompat="@drawable/arrowright"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

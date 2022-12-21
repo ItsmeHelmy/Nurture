@@ -88,14 +88,14 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <androidx.recyclerview.widget.RecyclerView
-                android:layout_marginTop="10dp"
+                android:id="@+id/recyclerView"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textArticle" />
+                app:layout_constraintTop_toBottomOf="@+id/textArticle"
+                tools:layout_editor_absoluteX="20dp" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </RelativeLayout>
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

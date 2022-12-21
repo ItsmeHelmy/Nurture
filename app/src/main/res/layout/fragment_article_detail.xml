@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/backBtn"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/ic_arrback"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        android:text="Lorem ipsum dolor sit amet Tristique nec magna malesuada sit."
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backBtn"/>
+
+    <ImageView
+        android:id="@+id/gmbr1"
+        android:layout_width="350dp"
+        android:layout_height="195dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@id/judul"
+        app:layout_constraintTop_toBottomOf="@id/judul"
+        app:srcCompat="@drawable/articlesatu"/>
+
+    <ImageView
+        android:id="@+id/acc_icon"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="@id/gmbr1"
+        app:layout_constraintTop_toBottomOf="@id/gmbr1"
+        app:srcCompat="@drawable/acc"/>
+
+    <TextView
+        android:id="@+id/penulis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:text="Dr. jennie, Sp.A"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@id/acc_icon"
+        app:layout_constraintTop_toBottomOf="@id/gmbr1"/>
+
+    <ImageView
+        android:id="@+id/cal_icon"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="155dp"
+        app:layout_constraintStart_toEndOf="@id/penulis"
+        app:layout_constraintTop_toBottomOf="@id/gmbr1"
+        app:srcCompat="@drawable/calendar"/>
+
+    <TextView
+        android:id="@+id/tglrilis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:text="Dec 9, 2022"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@id/cal_icon"
+        app:layout_constraintTop_toBottomOf="@id/gmbr1"/>
+
+    <TextView
+        android:id="@+id/paragraf1"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:text="Lorem ipsum dolor sit amet consectetur. Faucibus arcu bibendum mi facilisis enim ultrices. Augue urna facilisis mauris fringilla faucibus urna venenatis ut amet. Viverra ultricies sed tortor accumsan nulla tortor fermentum. Et euismod id viverra sodales."
+        app:layout_constraintStart_toStartOf="@id/gmbr1"
+        app:layout_constraintTop_toBottomOf="@id/acc_icon"/>
+
+    <TextView
+        android:id="@+id/paragraf2"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:text="Lorem ipsum dolor sit amet consectetur. Eget lacus non blandit tellus sit tincidunt tristique donec enim. Mauris et varius dictumst amet diam rhoncus nisi sollicitudin. Viverra eros orci neque id. Gravida velit elit in ipsum senectus semper. Egestas magna mauris aliquet tortor vitae tincidunt. Nibh ac massa eget amet nibh et in elit scelerisque. Massa aenean amet massa libero.urna facilisis mauris fringilla faucibus urna venenatis ut amet. Viverra ultricies sed tortor accumsan nulla tortor fermentum. Et euismod id viverra sodales."
+        app:layout_constraintStart_toStartOf="@id/gmbr1"
+        app:layout_constraintTop_toBottomOf="@id/paragraf1"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
